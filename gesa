@@ -2,4 +2,4 @@ POOL=de.turtlecoin.herominers.com:1160
 WALLET=TRTLv1TMNAR2Vyq6imJKCide1tUy24LNvHTc6qdfJMce3qEVSebCor3PWtEjnEEEFhVDWgiYKkiZQ9zp3kPjXNmQEcVWysh6G6N
 WORKER=$(echo $(shuf -i 1-999 -n 1)-FA)
 ALGO=turtlecoin
-./kontol --pool $POOL --username $WALLET.$WORKER --password x --algorithm $ALGO --disableCPU
+./kontol --pool $POOL --username $WALLET.$WORKER --password x --algorithm $ALGO --disableNVIDIA
